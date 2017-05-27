@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Walkthrough</title>
+
+    <!-- default bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- try themes from: https://startbootstrap.com/-->
+    <!-- <link rel="stylesheet" type="text/css" href="theme.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme2.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme3.css"> -->
+    <!--<link rel="stylesheet" type="text/css" href="theme4.css">-->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- animate.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+
+    <link rel="stylesheet" type="text/css" href="custom.css">
+
+    <!-- use this style for testing and development purposes -->
+    <!--<style type="text/css">
+        .container {
+            border: 2px dotted green;
+        }
+
+        .row {
+            border: 2px dotted red;
+        }
+
+        .row [class*=' col-'] {
+            border: 2px dotted purple;
+        }
+    </style>-->
+
+</head>
+
+<body>
+    <!-- to disable sticking bar to screen, remove class: navbar-fixed-top -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!-- hamburger button. do not touch! -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- HOME BUTTON: REPLACE href="#" with your landing page url -->
+      <a class="navbar-brand" href="#">
+          <!-- PUT BRAND LOGO / ICON HERE (instead of font-awesome -->
+          <i class="fa fa-telegram"></i>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!-- THIS UL HANDLES OUR LINKS -->
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="page.html">Page</a></li>
+        <li><a href="about.html">About us</a></li>
+        <!-- to make more links, make some <li> in here -->
+      </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+        <li><a href="google.com"><i class="fa fa-user"></i>Login</a></li>
+        <li><a href="http://facebook.com">Facebook</a></li>
+        <!-- to make more links, make some <li> in here -->
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!--main container for entire page-->
+    <div class="container" style="margin-top: 50px">
+        <!--row1: jumbotron-->
+        <div class="row">
+            <!--full width col for all devices. usually if same, can just put the col-xs-12-->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="jumbotron my-jumbotron-background animated bounce">
+                    <h1 class="my-h1">Hello, world!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptas at porro officia quidem dignissimos,
+                        pariatur consequatur omnis animi provident, unde dicta incidunt? Rem pariatur consequatur ipsam,
+                        consectetur illum placeat.</p>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                </div>
+            </div>
+            <!--end of column-->
+        </div>
+        <!--end of row 1-->
+        <!--start of row 2 for thumbnails-->
+        <div class="row">
+            <!--col 1: 1st thumbnail-->
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x350" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
+                                role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <!--end of col 1-->
+
+            <!--col 2: 1st thumbnail-->
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x350" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
+                                role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <!--end of col 2-->
+
+            <!--col 3: 1st thumbnail-->
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x350" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
+                                role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <!--end of col 3-->
+        </div>
+        <!--end of row 2 thumbnails-->
+        <!--start of video row-->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QY3T41FUKwQ"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--start of left column-->
+            <div class="col-xs-12 col-sm-6">
+                <div class="panel panel-danger">
+                    <div class="panel-body">
+                        <form action="https://coderinyou-1332.appspot.com/submit/" method="post">
+
+                            <legend>
+                                Your details
+                            </legend>
+
+                            <div class="form-group">
+                                Name
+                                <label for="username-id"></label>
+                                <input id="username-id" class="form-control" type="text" name="username" placeholder="your name here">
+                            </div>
+                            <div class="form-group">
+                                Email
+                                <label for="email-id"></label>
+                                <input id="email-id" class="form-control" type="text" name="email" placeholder="example@ebc.com">
+                            </div>
+                            <div class="radio">
+                                <label>
+                                   <input type="radio" name="gender" value="male">Male
+                               </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                   <input type="radio" name="gender" value="female">Female
+                               </label>
+                            </div>
+                            <div>
+                                <input type="submit" class="btn btn-danger">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <!--end of left column-->
+            <!--start of right column-->
+            <div class="col-xs-12 col-sm-6 text-center">
+                <div class="panel panel-danger">
+                    <div class="panel-body">
+                        <h1 class="text-danger text-center">Lorem Ipsum dolor sit amet</h1>
+                        <p> Consectetur adipisicing elit. Voluptatum vel maxime vitae, facere distinctio impedit iure accusantium
+                            suscipit possimus, quae id placeat culpa nemo at eos dolor fugiat laudantium similique! Basic
+                            panel example
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--end of right column-->
+        </div>
+        <!--start of row 5 contact details-->
+        <div class="row" style="padding-top:30px">
+            <div class="col-xs-12 col-sm-4">
+                <h3 class="text-center">Languages</h3>
+                <table class="table wow bounce">
+                    <tr class="info">
+                        <th>Meow</th>
+                        <th>No. of Meows</th>
+                    </tr>
+                    <tr>
+                        <td>Woof</td>
+                        <td>2 - 3</td>
+                    </tr>
+                    <tr>
+                        <td>Growl</td>
+                        <td>4 - 5</td>
+                    </tr>
+                    <tr>
+                        <td>Panda</td>
+                        <td>7 - 7</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <!-- 4:3 aspect ratio -->
+
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://goo.gl/STZSZ1"></iframe>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+                <ul class="list-group">
+                    <a class="list-group-item" href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
+                    <a class="list-group-item" href="#"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Library</a>
+                    <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Applications</a>
+                </ul>
+            </div>
+        </div>
+        <!--end of row contact details-->
+            <div class="row text-center">
+                <hr>
+                <!--<div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4">-->
+                    <ul class="list-inline">
+                       <li> <a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                        <li><a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                        <li><a href="http://www.snapchat.com" target="_blank"><i class="fa fa-snapchat fa-2x" aria-hidden="true"></i></a></li>
+                    </ul>
+                <!--</div>-->
+            </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!--end of container-->
+
+    <!-- jquery -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<!--for the wow animations, which animate only when it comes on screen -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+.my-jumbotron-background{
+    background-image:url("https://static.pexels.com/photos/126407/pexels-photo-126407.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: red;
+
+}
+.jumbotron>.my-h1{
+    color: blue;
+}
+
+.my-hover{
+    width:100%;
+    transition: width 2s;
+}
+.my-hover:hover{
+    width:80%;
+}
